@@ -1,0 +1,30 @@
+
+.inicio img,
+.clinica img,
+.farmacia img,
+.duvidas img{
+    display: block;
+}
+
+.inicio{
+    background: url(../_img/shape.svg) no-repeat bottom;
+}
+
+/* tamanho das imagens do site */
+    .inicio img{
+        width: 580px;
+        height: 580px;
+    }
+    .clinic img {
+        width: 480px;
+        height: 480px;
+    }
+    .farmacia img{
+        width: 630px;
+        height: 430px;
+    }
+    .duvidas img{
+        width: 540px;
+        height: 540px;
+    }
+/* tamanho das imagens do site */
