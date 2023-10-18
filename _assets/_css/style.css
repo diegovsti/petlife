@@ -1,18 +1,40 @@
+
 :root{
+    --blue_dark: #263138;
+    --orange_two: #FF725E;
+    --white_color: #FFFFFF;
+    --orange_color: #FF9A6C;
+    --font_main: "Montserrat", sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 1.6rem;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: var(--font_main);
 
 }
 html{
     font-size: 62.5%;
     scroll-behavior: smooth;
+    color: var(--blue_dark);
 }
 
-*{
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-    text-decoration: none;
-    font-size: 1.6rem;
-    
+h2{
+    font-size: 3.2rem;
+    line-height: 125%;
+}
+.main_info h1,
+.main_info span{
+    font-size: 4.5rem;
+    line-height: 125%;
+}
+
+.clinica,
+.farmacia,
+.duvidas{
+    padding-top: 10rem;
 }
 
 .inicio img,
@@ -20,10 +42,6 @@ html{
 .farmacia img,
 .duvidas .img{
     display: block;
-}
-
-.inicio{
-    background: url(../_img/shape.svg) no-repeat bottom;
 }
 
 /* tamanho das imagens do site */
@@ -44,3 +62,100 @@ html{
         height: 540px;
     }
 /* tamanho das imagens do site */
+
+
+/* estilo do header */
+.cabecalho{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    position: fixed;
+    padding:2.4rem 8rem ;
+    background-color: var(--orange_color);
+}
+
+.cabecalho .menu a{
+    color: var(--white_color);
+    font-weight: 600;
+    padding: 0 3.2rem;
+    transition: all .3s ease-in-out;
+}
+.cabecalho .menu a:hover{
+    transition: all .3s ease-in-out;
+    color: var(--orange_two);
+}
+
+.cabecalho .logo{
+    max-width: 15rem;
+}
+
+/* estilo do main */
+.inicio{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 3.2rem;
+    position: relative;
+    padding: 6.4rem 8rem 12.8rem 8rem;
+}
+
+.main_info{
+    max-width: 70rem;
+}
+.main_info h1{
+    margin-bottom: 2rem;
+}
+
+.main_info span{
+    color: #FF725E;
+}
+
+.main_info p{
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 3rem;
+    margin-bottom: 3rem;
+}
+
+.main_info .button_whats{
+    border-radius: 0.8rem;
+    padding: 1.6rem 3.2rem;
+    color: var(--white_color);
+    transition: all .4s ease-in-out;
+    background-color: var(--orange_two);
+}
+
+.main_info .button_whats:hover{
+    color: var(--orange_color);
+    transition: all .4s ease-in-out;
+    background-color: var(--blue_dark);
+}
+
+.main_info .button_transparent{
+    border-radius: 0.8rem;
+    padding: 1.6rem 3.2rem;
+    transition: all 1s ease;
+    color: var(--orange_two);
+    text-underline-offset: 0.4rem;
+    background-color: transparent;
+}
+
+.main_info .button_transparent:hover{
+    border-radius: 0.8rem;
+    color: var(--blue_dark);
+    transition: all 1s ease;
+    border: 0.1rem solid var(--blue_dark);
+}
+
+.shape{
+    left: 0;
+    width: 100%;
+    z-index: -10;
+    bottom: -12rem;
+    position: absolute;
+}
