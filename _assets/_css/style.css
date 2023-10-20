@@ -8,6 +8,9 @@
     --font_main: "Montserrat", sans-serif;
     --animacao_transition: all .5s ease;
 }
+body{
+    max-width: 100%;
+}
 *{
     margin: 0;
     padding: 0;
@@ -45,23 +48,24 @@ h2{
 .farmacia img,
 .duvidas .img{
     display: block;
+    max-width: 100%;
 }
 
 /* tamanho das imagens do site */
     .inicio img{
-        width: 580px;
+        max-width: 580px;
         height: 580px;
     }
     .clinic img {
-        width: 480px;
+        max-width: 480px;
         height: 480px;
     }
     .farmacia img{
-        width: 630px;
+        max-width: 630px;
         height: 430px;
     }
     .duvidas .img{
-        width: 540px;
+        max-width: 540px;
         height: 540px;
     }
 /* tamanho das imagens do site */
@@ -69,6 +73,7 @@ h2{
 
 /* estilo do header */
 .cabecalho{
+    max-width: 100%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -99,6 +104,8 @@ h2{
 
 /* estilo do main */
 .inicio{
+    width: 100%;
+    max-width: 1440px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -108,7 +115,7 @@ h2{
 }
 
 .main_info{
-    max-width: 70rem;
+    max-width: 60rem;
 }
 .main_info h1{
     margin-bottom: 2rem;
@@ -166,12 +173,19 @@ h2{
 
 /* estilo da seção clinica */
 .clinica{
+    width: 100%;
+    max-width: 1600px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 6.4rem;
     padding-left: 8rem;
     padding-right: 8rem;
 }
+.info_clinica{
+    max-width: 65rem;
+}
+
 .clinica ul li{
     margin-bottom: 1.6rem;
     margin-left: 3.2rem;
@@ -223,11 +237,23 @@ h2{
 }
 
 .duvida p{
-    border-left: 0.2rem solid var(--orange_two);
-    border-bottom: 0.2rem solid var(--orange_two);
     border-right: 0.2rem solid var(--orange_two);
+    border-bottom: 0.2rem solid var(--orange_two);
+    border-left: 0.2rem solid var(--orange_two);
+    line-height: 150%;
     border-radius: 0 0 0.8rem 0.8rem;
     margin-top: -0.8rem;
+    padding: 0 2.4rem;
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+    transition: .2s;
+    font-size: 1.4rem;
+}
+
+.duvida.ativa p{
+    height: fit-content;
+    opacity: 1;
     padding: 2.4rem;
 }
 
