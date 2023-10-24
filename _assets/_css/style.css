@@ -1,5 +1,4 @@
-
-:root{
+:root {
     --blue_dark: #263138;
     --orange_two: #FF725E;
     --white_color: #FFFFFF;
@@ -8,10 +7,12 @@
     --font_main: "Montserrat", sans-serif;
     --animacao_transition: all .5s ease;
 }
-body{
+
+body {
     max-width: 100%;
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
     font-size: 1.6rem;
@@ -20,59 +21,65 @@ body{
     font-family: var(--font_main);
 
 }
-html{
+
+html {
     font-size: 62.5%;
     scroll-behavior: smooth;
     color: var(--blue_dark);
 }
 
-h2{
+h2 {
     font-size: 3.2rem;
     line-height: 125%;
     margin-bottom: 2.5rem;
 }
+
 .main_info h1,
-.main_info span{
+.main_info span {
     font-size: 4.5rem;
     line-height: 125%;
 }
 
 .clinica,
 .farmacia,
-.duvidas{
+.duvidas {
     padding-top: 10rem;
 }
 
 .inicio img,
 .clinica img,
 .farmacia img,
-.duvidas .img{
+.duvidas .img {
     display: block;
     max-width: 100%;
 }
 
 /* tamanho das imagens do site */
-    .inicio img{
-        max-width: 580px;
-        height: 580px;
-    }
-    .clinic img {
-        max-width: 480px;
-        height: 480px;
-    }
-    .farmacia img{
-        max-width: 630px;
-        height: 430px;
-    }
-    .duvidas .img{
-        max-width: 540px;
-        height: 540px;
-    }
+.inicio img {
+    max-width: 580px;
+    height: 580px;
+}
+
+.clinic img {
+    max-width: 480px;
+    height: 480px;
+}
+
+.farmacia img {
+    max-width: 630px;
+    height: 430px;
+}
+
+.duvidas .img {
+    max-width: 540px;
+    height: 540px;
+}
+
 /* tamanho das imagens do site */
 
 
 /* estilo do header */
-.cabecalho{
+.cabecalho {
     max-width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -83,27 +90,28 @@ h2{
     right: 0;
     z-index: 1;
     position: fixed;
-    padding:2.4rem 8rem ;
+    padding: 2.4rem 8rem;
     background-color: var(--orange_color);
 }
 
-.cabecalho .menu a{
+.cabecalho .menu a {
     color: var(--white_color);
     font-weight: 600;
     padding: 0 3.2rem;
     transition: var(--animacao_transition);
 }
-.cabecalho .menu a:hover{
+
+.cabecalho .menu a:hover {
     transition: var(--animacao_transition);
     color: var(--orange_two);
 }
 
-.cabecalho .logo{
+.cabecalho .logo {
     max-width: 15rem;
 }
 
 /* estilo do main */
-.inicio{
+.inicio {
     width: 100%;
     max-width: 1440px;
     display: flex;
@@ -114,26 +122,26 @@ h2{
     padding: 6.4rem 8rem 12.8rem 8rem;
 }
 
-.main_info{
+.main_info {
     max-width: 60rem;
 }
-.main_info h1{
+
+.main_info h1 {
     margin-bottom: 2rem;
 }
 
-.main_info span{
+.main_info span {
     color: #FF725E;
 }
 
-.descricao
-{
+.descricao {
     font-weight: 500;
     font-size: 1.8rem;
     line-height: 3rem;
     margin-bottom: 3rem;
 }
 
-.main_info .button_whats{
+.main_info .button_whats {
     border-radius: 0.8rem;
     padding: 1.6rem 3.2rem;
     color: var(--white_color);
@@ -141,13 +149,13 @@ h2{
     background-color: var(--orange_two);
 }
 
-.main_info .button_whats:hover{
+.main_info .button_whats:hover {
     color: var(--orange_color);
     transition: var(--animacao_transition);
     background-color: var(--blue_dark);
 }
 
-.main_info .button_transparent{
+.main_info .button_transparent {
     border-radius: 0.8rem;
     padding: 1.6rem 3.2rem;
     transition: all 1s ease;
@@ -156,14 +164,14 @@ h2{
     background-color: transparent;
 }
 
-.main_info .button_transparent:hover{
+.main_info .button_transparent:hover {
     border-radius: 0.8rem;
     color: var(--blue_dark);
     transition: all 1s ease;
     border: 0.1rem solid var(--blue_dark);
 }
 
-.shape{
+.shape {
     left: 0;
     width: 100%;
     z-index: -10;
@@ -172,7 +180,7 @@ h2{
 }
 
 /* estilo da seção clinica */
-.clinica{
+.clinica {
     width: 100%;
     max-width: 1600px;
     display: flex;
@@ -182,61 +190,65 @@ h2{
     padding-left: 8rem;
     padding-right: 8rem;
 }
-.info_clinica{
+
+.info_clinica {
     max-width: 65rem;
 }
 
-.clinica ul li{
+.clinica ul li {
     margin-bottom: 1.6rem;
     margin-left: 3.2rem;
     color: var(--orange_two);
 }
 
-.item_lista{
+.item_lista {
     color: var(--blue_dark);
 }
 
 /* farmacia */
-.farmacia{
+.farmacia {
     text-align: center;
 }
 
-.farmacia img{
+.farmacia img {
     margin: 6.4rem auto;
 }
 
-.farmacia p{
+.farmacia p {
     display: block;
     margin: 0 auto;
     max-width: 95rem;
 }
 
 /* estilo seção dúvidas */
-.duvidas{
+.duvidas {
     display: flex;
     align-items: start;
     gap: 6.4rem;
     padding-left: 8rem;
     padding-right: 8rem;
 }
-.duvida{
+
+.duvida {
     position: relative;
     margin-bottom: 2rem;
 }
-.duvida h3{
+
+.duvida h3 {
     display: block;
     cursor: pointer;
     border-radius: 0.8rem;
     padding: 2.4rem;
     border: 0.2rem solid var(--orange_two);
 }
-.duvida img{
+
+.duvida img {
     position: absolute;
     top: 3.2rem;
     right: 2.4rem;
 }
 
-.duvida p{
+.duvida p {
     border-right: 0.2rem solid var(--orange_two);
     border-bottom: 0.2rem solid var(--orange_two);
     border-left: 0.2rem solid var(--orange_two);
@@ -251,31 +263,32 @@ h2{
     font-size: 1.4rem;
 }
 
-.duvida.ativa p{
+.duvida.ativa p {
     height: fit-content;
     opacity: 1;
     padding: 2.4rem;
 }
 
 /* estilo do footer */
-footer{
+footer {
     display: flex;
     justify-content: space-between;
     gap: 8rem;
     padding: 10rem 8rem;
     background-color: var(--light_orange);
 }
-.logo_info{
+
+.logo_info {
     max-width: 35rem;
 }
 
-footer article h3{
+footer article h3 {
     font-size: 2.2rem;
     margin-bottom: 2rem;
     display: block;
 }
 
-.footer_titulo{
+.footer_titulo {
     display: block;
     font-weight: 600;
     margin: 2.4rem 0;
@@ -284,7 +297,8 @@ footer article h3{
     line-height: 180%;
 
 }
-footer .nav a{
+
+footer .nav a {
     display: block;
     margin-bottom: 1.6rem;
     color: var(--orange_two);
@@ -293,34 +307,39 @@ footer .nav a{
     transition: all .5s ease;
 }
 
-footer .nav a:hover{
+footer .nav a:hover {
     transition: all .5s ease;
     color: var(--blue_dark);
 }
-.info_contato p, 
-.info_contato a{
-    margin-bottom: 2.4rem;   
-    font-size: 1.4rem;   
+
+.info_contato p,
+.info_contato a {
+    margin-bottom: 2.4rem;
+    font-size: 1.4rem;
     font-weight: 600;
     color: var(--orange_two);
 }
-.info_contato a:hover{
+
+.info_contato a:hover {
     transition: all .5s ease;
     color: var(--blue_dark);
 }
-.copy{
+
+.copy {
     background-color: var(--blue_dark);
     padding: 2.4rem;
     text-align: center;
     color: var(--white_color);
 }
-.copy a{
+
+.copy a {
     margin-left: 1rem;
-    display: inline-block;  
+    display: inline-block;
     color: var(--white_color);
-    transform: var(--animacao_transition) ;
+    transform: var(--animacao_transition);
 }
-.copy a:hover{
+
+.copy a:hover {
     color: var(--orange_color);
     transition: var(--animacao_transition);
 }
